@@ -103,8 +103,8 @@ My final model consisted of the following layers:
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-batch size: 100
-epochs: 60
+batch size: 128
+epochs: 120
 learning rate: 0.001
 mu: 0
 sigma: 0.1
@@ -119,6 +119,9 @@ The citation of the paper "Traffic Sign Recognition with Multi-Scale Convolution
 * Why did you believe it would be relevant to the traffic sign application?
 Since the name is discussing about the german traffic sign, I think it would be very useful.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+training:
+validation :0.99
+test set :0.93
 
  
 
@@ -154,50 +157,15 @@ The code for making predictions on my final model is located in the 11th cell of
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
 
+| Image			        |     Prediction	        	|%		|  
+|:---------------------:|:------------------------------| 		| 
+| Stop Sign      		| Stop sign   					|100	|  
+| Speed limit (30km/h)	| Speed limit (30km/h)			|100	|  
+| Priority road			| Priority road					|100	| 
+| Keep right			| Keep right					|100	| 
+| Speed limit (60km/h)	| Slippery Road (60km/h)		|100	| 
+| General Caution		| General Caution				|100	| 
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Speed limit (30km/h) 							| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-
-For the second image
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-
-For the third image
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority road 								| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-
-
-For the fourth image
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Keep right 									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-
-
-For the fifth image
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Slippery Road (60km/h) 						| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-
-
-For the sixth image
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.00         			| General Caution								| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
 
 
 
