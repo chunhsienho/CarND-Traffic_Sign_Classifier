@@ -121,7 +121,7 @@ The citation of the paper "Traffic Sign Recognition with Multi-Scale Convolution
 Since the name is discussing about the german traffic sign, I think it would be very useful.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
 training:
-validation :0.99
+validation :0.986
 test set :0.93
 
  
@@ -134,6 +134,8 @@ Here are five German traffic signs that I found on the web:
 
 
 Stop sign, Speed limit(30km/h),Priority road,Keep right,Speed limit (60km/h),General Caution
+
+
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -151,6 +153,16 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. 
 
+It is a very good result comparing with the validation accuracy 99 and the test accuracy 93. This means that my model perform good in real-world data. I think the accuracy would change if I give more data point. Also, Not all the data in the real world are as easy as my selection. 
+
+For example
+
+The signal of 27,Pedestrians may be recognized as 18 gerneral caution. The reason is that their shape may be very similar.
+
+I did not know how to figure it out.
+
+
+
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
@@ -166,6 +178,11 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | Keep right			| Keep right					|100	| 
 | Speed limit (60km/h)	| Slippery Road (60km/h)		|100	| 
 | General Caution		| General Caution				|100	| 
+
+The result could be see in the 20 cells
+
+The y-axis is the softmax probabilities and the x-axis is the label of the traffic 
+
 
 
 
